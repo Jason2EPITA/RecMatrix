@@ -56,18 +56,6 @@ Ce projet vise à développer un système de recommandation qui fournit des reco
 
 Le système recommande avec succès des films complémentaires aux préférences de deux utilisateurs. Les recommandations sont basées sur les notes moyennes prédites pour les deux utilisateurs, garantissant que les films suggérés ont des scores de couple élevés.
 
-### Top 10 des Films Recommandés pour les Utilisateurs 5 et 6
-
-1. **Titre du Film 1** : Score du Couple : X.XX
-2. **Titre du Film 2** : Score du Couple : X.XX
-3. **Titre du Film 3** : Score du Couple : X.XX
-4. **Titre du Film 4** : Score du Couple : X.XX
-5. **Titre du Film 5** : Score du Couple : X.XX
-6. **Titre du Film 6** : Score du Couple : X.XX
-7. **Titre du Film 7** : Score du Couple : X.XX
-8. **Titre du Film 8** : Score du Couple : X.XX
-9. **Titre du Film 9** : Score du Couple : X.XX
-10. **Titre du Film 10** : Score du Couple : X.XX
 
 ## Conclusion
 
