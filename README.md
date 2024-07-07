@@ -43,10 +43,10 @@ Ce projet vise à développer un système de recommandation qui fournit des reco
 ### Optimisation des Hyperparamètres
 
 - Des expériences ont été menées pour trouver les meilleurs hyperparamètres pour le modèle SVD en utilisant GridSearchCV. L'espace de recherche comprenait :
-  - `n_factors` : [50, 100]
-  - `n_epochs` : [20, 30]
-  - `lr_all` : [0.005, 0.01]
-  - `reg_all` : [0.1, 0.2]
+  - `n_factors` : [50]
+  - `n_epochs` : [10]
+  - `lr_all` : [0.005]
+  - `reg_all` : [0.1]
 
 ### Évaluation du Modèle
 
