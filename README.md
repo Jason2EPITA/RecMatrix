@@ -19,7 +19,7 @@ Ce projet vise à développer un système de recommandation qui fournit des reco
   - **Gestion des Valeurs Manquantes** : Remplir les valeurs manquantes dans les données `title.basics.tsv`.
   - **Fusion des Données** : Fusionner `movies.dat` avec `title.basics.tsv` pour enrichir le jeu de données avec des métadonnées supplémentaires.
 
-### Ingénierie des Caractéristiques
+### Extraction des Caractéristiques
 
 - **Matrice Utilisateur-Élément** : Créer une matrice d'interaction utilisateur-élément à partir du jeu de données fusionné. Cette matrice est utilisée pour représenter les notes données par les utilisateurs aux films.
 
@@ -51,6 +51,36 @@ Ce projet vise à développer un système de recommandation qui fournit des reco
 ### Évaluation du Modèle
 
 - Le modèle a été évalué en utilisant la métrique RMSE sur les données de test. Le RMSE final obtenu était de [insérer la valeur RMSE], indiquant la précision du modèle dans la prédiction des notes des utilisateurs.
+
+
+### Algorithme de Recommandation
+- Fonction recommend_movie_for_user_pair
+Cette fonction recommande des films en se basant uniquement sur les notes prédites pour deux utilisateurs. Voici les étapes principales :
+
+Prédictions pour tous les films : Les notes prédites pour chaque film sont calculées pour les deux utilisateurs.
+Moyenne des prédictions : La moyenne des prédictions des deux utilisateurs est calculée pour chaque film.
+Sélection des meilleurs films : Les films sont triés en fonction des notes moyennes et les meilleurs sont sélectionnés
+
+- Fonction recommend_movies_for_user_pair_with_genres_years
+Cette fonction améliore la recommandation en tenant compte des genres et des années des films préférés par les utilisateurs. Voici les étapes principales :
+
+Obtenir les notes des utilisateurs : Les notes des utilisateurs sont obtenues à partir de la matrice utilisateur-élément.
+Extraire les genres et années préférés : Les genres et les années des films aimés par chaque utilisateur sont extraits.
+Trouver les préférences communes : Les genres et les années communs préférés par les deux utilisateurs sont déterminés.
+Prédictions pour tous les films : Les notes prédites pour chaque film sont calculées pour les deux utilisateurs.
+Moyenne des prédictions : La moyenne des prédictions des deux utilisateurs est calculée pour chaque film.
+Filtrer les films : Les films sont filtrés pour inclure seulement ceux qui correspondent aux genres et aux années préférés.
+Sélection des meilleurs films : Les films filtrés sont triés en fonction des notes moyennes et les meilleurs sont sélectionnés.
+
+
+### Comparaison des Fonctions
+- recommend_movie_for_user_pair :
+Avantages : Plus simple et plus rapide car elle ne filtre pas les films par genres et années.
+Inconvénients : Ne prend pas en compte les préférences spécifiques des utilisateurs en termes de genres et d'années des films.
+- recommend_movies_for_user_pair_with_genres_years :
+Avantages : Offre des recommandations plus personnalisées en tenant compte des genres et des années que les utilisateurs ont aimés.
+Inconvénients : Peut être légèrement plus lente en raison du filtrage supplémentaire des films par genres et années.
+
 
 ## Résultats
 
