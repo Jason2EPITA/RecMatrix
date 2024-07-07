@@ -61,12 +61,6 @@ Le système recommande avec succès des films complémentaires aux préférences
 
 Le système de recommandation fournit des recommandations de films pertinentes et complémentaires pour deux utilisateurs en utilisant des techniques de filtrage collaboratif et de factorisation de matrices. L'utilisation de GridSearchCV pour l'optimisation des hyperparamètres et l'évaluation du modèle à l'aide de la RMSE ont permis d'assurer que les recommandations sont précises et significatives.
 
-## Travaux Futurs
-
-- **Intégration de Caractéristiques Supplémentaires** : Explorer l'utilisation de caractéristiques supplémentaires telles que les réalisateurs, les acteurs et les mots-clés des intrigues pour améliorer encore les recommandations.
-- **Amélioration de la Scalabilité** : Optimiser le système pour des jeux de données plus volumineux afin de gérer plus d'utilisateurs et de films de manière efficace.
-- **Intégration des Retours d'Utilisateurs** : Intégrer les retours des utilisateurs pour améliorer continuellement la précision des recommandations.
-
 ## Comment Exécuter le Projet
 
 1. **Cloner le Dépôt** :
@@ -79,17 +73,3 @@ Le système de recommandation fournit des recommandations de films pertinentes e
    ```bash
    pip install -r requirements.txt
    ```
-
-3. **Exécuter le Jupyter Notebook** :
-   ```bash
-   jupyter notebook recmatrix.ipynb
-   ```
-
-## Remerciements
-
-- **MovieLens** : Pour avoir fourni le jeu de données des notes de films.
-- **IMDb** : Pour avoir fourni des métadonnées supplémentaires sur les films.
-
----
-
-Ce README fournit une vue d'ensemble complète du projet, couvrant tous les aspects depuis la collecte des données jusqu'aux résultats. Il assure que les critères de fonctionnalité, de précision et de documentation sont clairement abordés.
